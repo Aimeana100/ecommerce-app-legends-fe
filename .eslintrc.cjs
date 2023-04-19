@@ -4,10 +4,9 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'airbnb',
-    'airbnb/hooks',
+    'eslint:recommended',
     'plugin:react/recommended',
-    'plugin:prettier/recommended',
+    'plugin:react/recommended',
   ],
   overrides: [],
   parserOptions: {
@@ -16,9 +15,15 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
-    'react/react-in-jsx-scope': 0,
-    'no-unused-vars': 'warn',
-    'no-undef': 'warn',
+    'linebreak-style': ['error', 'windows'],
     quotes: ['error', 'single', { allowTemplateLiterals: true }],
+    semi: ['error', 'always'],
+    'no-unused-vars': 'error',
+    'no-undef': 'error',
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
+    'react/prop-types': 'error',
+    'react/no-unescaped-entities': 'error',
+    'no-param-reassign': 'error',
   },
 };
