@@ -1,15 +1,15 @@
-import react from "react";
-import Button from "./Button";
-import "../../index.css";
+import react from 'react';
+import Button from './Button';
+import '../../index.css';
 
 export default {
-  title: "Button/sizes",
+  title: 'Button/sizes',
   component: Button,
 };
 
 export const small = () => (
   <Button
-    variant="px-3 bg-blue-400 rounded-md text-white font-bold"
+    variant="px-4 bg-blue-400 rounded-md text-white font-bold"
     child="small"
   >
     small
@@ -18,7 +18,7 @@ export const small = () => (
 
 export const medium = () => (
   <Button
-    variant="px-4 bg-blue-400 rounded-md text-white font-bold py-2"
+    variant="px-6 bg-blue-400 rounded-md text-white font-bold py-2"
     child="medium"
   >
     medium
@@ -33,4 +33,3 @@ export const large = () => (
     large
   </Button>
 );
-
